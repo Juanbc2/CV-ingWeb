@@ -24,7 +24,7 @@ const Index = () => {
         <hr></hr>
         <section className="contact-me">
           <table>
-            <tr >
+            <tr>
               <td>Age:</td>
               <td className="float-right">24</td>
             </tr>
