@@ -39,14 +39,6 @@ body {
   text-align: center;
 }
 
-
-main {
-  padding: 20px 35px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
 section {
   margin: 10px;
 }
