@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.debug {
+  outline: 1px solid red;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* selector universal */
+* {
+  margin: 0px;
+}
+
+/* selector por id */
+/* #este-es-el-body {
+  background-color: red;
+} */
+
+/* selectores de etiqueta */
+body {
+  display: flex;
+}
+
+.aside-left {
+  width: 330px;
+  height: 100vh;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aside-right {
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+
+main {
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+section {
+  margin: 10px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* selectores de clase */
+.debug {
+  border: 1px solid red;
+}
+
+.info-personal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.foto-personal {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+
+.nombre-persona {
+  display: flex;
+  gap: 5px;
+}
+
+.primer-nombre {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.apellido {
+  font-size: 20px;
+  color: #666666;
+}
+.titulo-persona {
+  color: #666666;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personal-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills {
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skill-container {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-marker-container {
+  display: flex;
+  gap: 5px;
+}
+
+.skill-marker {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+}
+
+.top-links {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.main-title {
+  width: 100%;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+.main-title > h3 {
+  color: white;
+}
+
+.milestone-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+
+.milestone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.milestone > h4 {
+  text-transform: uppercase;
+}
+
+.milestone > span {
+  color: #999;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.professional-skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+}
+
+.professional-skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 15px;
+}
+
+.professional-skill-bar {
+  height: 14px;
+  outline: 1px solid orange;
+  border-radius: 10px;
+  width: 100%;
+  padding: 2px;
+  align-items: center;
+
+}
+
+
+
+/* clases utilitarias */
+
+.black-background {
+  background-color: #242424;
+}
+
+.gray-background {
+  background-color: #727e81;
+}
