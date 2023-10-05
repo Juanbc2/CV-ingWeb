@@ -8,8 +8,8 @@ import Education from "../components/education";
 
 const Index = () => {
   return (
-    <div className="flex bg-slate-200 font-medium">
-      <aside className="bg-neutral-50 aside-left">
+    <div className="flex bg-slate-200 font-medium w-screen">
+      <aside className="gap-15 px-5 py-2 bg-neutral-50 flex-col flex h-full w-[330px] fixed">
         <section>
           <div className="info-personal">
             <img
@@ -23,8 +23,8 @@ const Index = () => {
             </div>
             <span className="titulo-persona">Fullstack Developer</span>
           </div>
+          <br></br>
         </section>
-
         <hr></hr>
         <section className="contact-me">
           <table>
@@ -39,7 +39,14 @@ const Index = () => {
               </tr>
               <tr>
                 <td>Email:</td>
-                <td className="float-right">jgb_333@hotmail.com</td>
+                <td className="float-right">
+                  <a
+                    className="text-green-500"
+                    href="mailto://jgb_333@hotmail.com"
+                  >
+                    jgb_333@hotmail.com
+                  </a>
+                </td>
               </tr>
               <tr>
                 <td>Phone:</td>
@@ -50,44 +57,47 @@ const Index = () => {
         </section>
         <hr></hr>
         <section>
+          <br></br>
           <h2>
             <b>Languages</b>
           </h2>
-          <br></br>
           <PercentageBar percentage={80} name="English" />
           <PercentageBar percentage={100} name="Spanish" />
+          <br></br>
         </section>
         <hr></hr>
         <section>
+          <br></br>
           <h2>
             <b>Programming Languages</b>
           </h2>
-          <br></br>
           <PercentageBar percentage={80} name="Javascript" />
           <PercentageBar percentage={40} name="Python" />
           <PercentageBar percentage={70} name="Java" />
           <PercentageBar percentage={70} name="C#" />
+          <br></br>
         </section>
         <hr></hr>
-
         <section>
+          <br></br>
           <h2>
             <b>Extra Skills</b>
           </h2>
-          <br></br>
           <Skills name="Teamwork" />
           <Skills name="Problem Solving" />
           <Skills name="Communication" />
           <Skills name="Adaptability" />
         </section>
-        <hr></hr>
       </aside>
+      <div className="ml-[20%]"></div>
       <main className="max-w-7xl">
         <section>
-          {/* <Description
-            title="My Knowledge"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          /> */}
+          <div className="flex justify-center flex-wrap">
+            <Description
+              title="My Knowledge"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            />
+          </div>
           <div className="flex justify-center flex-wrap my-10">
             <Knowledge
               title="Web Development"
@@ -117,6 +127,12 @@ const Index = () => {
           </div>
         </section>
         <section>
+          <div className="flex justify-center flex-wrap">
+            <Description
+              title="Education"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            />
+          </div>
           <div className="bg-neutral-50">
             <Education
               place="I.E Maestro Fernando Botero"
@@ -142,36 +158,50 @@ const Index = () => {
           </div>
         </section>
         <section>
+          <div className="flex justify-center flex-wrap">
+            <Description
+              title="Portfolio"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            />
+          </div>
           <div className="flex overflow-x-auto w-full">
             <Portfolio
               title="Career Recommendation"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
               image="images/career.png"
+              link="https://github.com/dsceafit/ds-squads/tree/main/career-recommendation"
             />
             <Portfolio
               title="Avril App"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
               image="images/avril.png"
+              link="https://avrilapp.com"
             />
             <Portfolio
-              title="How to Make Web Templates"
+              title="Nashe Car"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-              image="images/career.png"
+              image="images/Nashecar.png"
             />
             <Portfolio
-              title="How to Make Web Templates"
+              title="Security Data"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-              image="images/career.png"
+              image="images/securityData.png"
+              link="https://github.com/Juanbc2/Security-Data-Game"
             />
             <Portfolio
-              title="How to Make Web Templates"
+              title="Dr Gato Veterinaria"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-              image="images/career.png"
+              image="images/drgato.png"
+              link="https://dr-gato-veterinaria.web.app"
             />
           </div>
         </section>
+        <footer className="text-center p-10 w-full min-w-max m-2 bg-neutral-50">
+    2023 All Rights Reversed. Juanbc2
+      </footer>
       </main>
-      <aside className="bg-neutral-50 aside-right">
+      <div className="ml-[4%]"></div>
+      <aside className="gap-15 px-5 py-2 right-0 bg-neutral-50 flex-col flex h-full text-center fixed">
         <br></br>
         <h2>
           <b>Socials</b>
@@ -189,7 +219,6 @@ const Index = () => {
         />
         <Socials name="Share" url="https://www.google.com/search?q=juanbc2" />
       </aside>
-      <footer></footer>
     </div>
   );
 };

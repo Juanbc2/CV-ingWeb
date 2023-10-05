@@ -39,10 +39,6 @@ body {
   text-align: center;
 }
 
-section {
-  margin: 10px;
-}
-
 h3 {
   text-transform: uppercase;
   font-weight: bold;
@@ -196,8 +192,7 @@ h3 {
 }
 
 .professional-skill-bar {
-  height: 14px;
-  outline: 1px solid orange;
+
   border-radius: 10px;
   width: 100%;
   padding: 2px;

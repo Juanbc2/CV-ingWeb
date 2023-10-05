@@ -5,9 +5,9 @@ interface descriptionProps {
 
 const Description = ({ title, text }: descriptionProps) => {
   return (
-    <div className="md:text-center">
-      <h1 className="mb-10 font-bold text-4xl">{title}</h1>
-      <h4 className="w-80 text-center">{text}</h4>
+    <div className="text-center p-10 w-96 min-w-max m-2">
+      <h2 className="mb-5 font-bold text-4xl">{title}</h2>
+      <h4 className="mb-2 font-medium text-gray-500 whitespace-normal max-w-xl">{text}</h4>
     </div>
   );
 };
