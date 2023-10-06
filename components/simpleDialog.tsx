@@ -16,10 +16,10 @@ function SimpleDialog(props: SimpleDialogProps) {
   };
 
   return (
-    <Dialog onClose={handleClose} open={open} >
+    <Dialog onClose={handleClose} open={open}>
       <DialogTitle>Thanks for trying to Hire Me!</DialogTitle>
       <DialogContent className="flex flex-wrap justify-center">
-        <img src="images/gracias.png"></img>
+        <img src="images/gracias.png" alt="hireMe Dialog" />
         <DialogContentText>
           I'm currently not looking for any new opportunities, but I'll be sure
           to reach out if that changes.

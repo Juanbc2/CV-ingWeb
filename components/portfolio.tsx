@@ -8,7 +8,7 @@ const Portfolio = ({ title, text, image, link }: portfolioProps) => {
   return (
     <div className="m-10 text-justify bg-neutral-50 min-w-max hover:bg-neutral-100">
       <div className="mt-10 h-36 flex justify-center bg-neutral-100">
-        <img src={image} className="m-auto w-40" />
+        <img src={image} alt="Portfolio image" className="m-auto w-40" />
       </div>
       <br></br>
       <div className="mx-10 mb-5 text-left">
