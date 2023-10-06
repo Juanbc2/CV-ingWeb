@@ -108,7 +108,7 @@ const Index = () => {
         <section className="flex justify-center flex-wrap">
           <div className="m-10 mt-0 w-full flex justify-between text-justify gap-6 bg-neutral-50 min-w-max">
             <div className="flex flex-col p-16">
-              <h2 className="mt-10 mb-1 font-bold text-5xl">I'm Juan Calle</h2>
+              <h2 className="mt-10 mb-1 font-bold text-5xl">Im Juan Calle</h2>
               <div className="mb-5 mt-1 font-bold text-5xl flex">
                 <h2 className="mr-2 text-cyan-700">Front-end</h2> Developer
               </div>
