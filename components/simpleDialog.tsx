@@ -21,8 +21,8 @@ function SimpleDialog(props: SimpleDialogProps) {
       <DialogContent className="flex flex-wrap justify-center">
         <img src="images/gracias.png" alt="hireMe Dialog" />
         <DialogContentText>
-          I'm currently not looking for any new opportunities, but I'll be sure
-          to reach out if that changes.
+          Im currently not looking for any new opportunities, but Ill be sure to
+          reach out if that changes.
         </DialogContentText>
       </DialogContent>
     </Dialog>
