@@ -13,13 +13,13 @@ const Education = ({
   title,
 }: educationProps) => {
   return (
-    <div className="bg-neutral-50 py-5 px-10 w-96 min-w-max rounded-xl m-2">
+    <div className="bg-neutral-50 pt-5 px-10 w-96 min-w-max rounded-xl m-2">
       <div className="grid grid-cols-2 grid-flow-row gap-4">
         <div className="mb-5 font-bold text-lg">{place}</div>
         <div className="mb-5 font-bold text-lg">{title}</div>
         <div className="flex font-medium">
-          {role}{" "}
-          <div className="ml-5 bg-orange-500 p-1 text-xs text-neutral-50 h-fit w-fit">
+          {role}
+          <div className="ml-5 bg-cyan-700 p-1 text-xs text-neutral-50 h-fit w-fit">
             {date}
           </div>
         </div>
