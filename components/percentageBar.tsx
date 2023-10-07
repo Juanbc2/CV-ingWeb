@@ -12,7 +12,7 @@ const percentageBar = ({ percentage, name }: PercentageBarProps) => {
   };
 
   return (
-    <div>
+    <div className="mb-1">
       <h2 className="float-left">{name}</h2>
       <h2 className="float-right">{percentage}%</h2>
       <br></br>

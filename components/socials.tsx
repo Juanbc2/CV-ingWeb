@@ -10,53 +10,23 @@ const socials = ({ url, name }: socialsProps) => {
   let size = 35;
   let socials = [
     {
-      icon: (
-        <FaFacebookF
-          onClick={() => window.open(url)}
-          size={size}
-          className="m-auto"
-        />
-      ),
+      icon: <FaFacebookF size={size} className="m-auto" />,
       name: "Facebook",
     },
     {
-      icon: (
-        <FaInstagram
-          onClick={() => window.open(url)}
-          size={size}
-          className="m-auto"
-        />
-      ),
+      icon: <FaInstagram size={size} className="m-auto" />,
       name: "Instagram",
     },
     {
-      icon: (
-        <FaGithub
-          onClick={() => window.open(url)}
-          size={size}
-          className="m-auto"
-        />
-      ),
+      icon: <FaGithub size={size} className="m-auto" />,
       name: "Github",
     },
     {
-      icon: (
-        <FaLinkedin
-          onClick={() => window.open(url)}
-          size={size}
-          className="m-auto"
-        />
-      ),
+      icon: <FaLinkedin size={size} className="m-auto" />,
       name: "Linkedin",
     },
     {
-      icon: (
-        <IoShareSocialOutline
-          onClick={() => window.open(url)}
-          size={size}
-          className="m-auto"
-        />
-      ),
+      icon: <IoShareSocialOutline size={size} className="m-auto" />,
       name: "Share",
     },
   ];
@@ -65,7 +35,10 @@ const socials = ({ url, name }: socialsProps) => {
 
   return (
     <div>
-      <button className="w-20 h-20 bg-cyan-700 rounded-full content-center m-2 hover:bg-cyan-800">
+      <button
+        className="w-20 h-20 bg-cyan-700 rounded-full content-center m-2 hover:bg-cyan-800"
+        onClick={() => window.open(url)}
+      >
         {icon}
       </button>
     </div>

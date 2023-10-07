@@ -9,7 +9,6 @@ import Education from "../components/education";
 import SimpleDialog from "@/components/simpleDialog";
 
 const Index = () => {
-
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -21,26 +20,26 @@ const Index = () => {
   };
 
   return (
-    <div className="flex bg-slate-200 font-medium w-screen">
-      <SimpleDialog open={open} selectedValue="" onClose={handleClose}/>
+    <div className="flex bg-slate-200 font-medium w-auto">
+      <SimpleDialog open={open} selectedValue="" onClose={handleClose} />
       <aside className="gap-15 px-5 py-2 top-0 bg-neutral-50 flex-col flex h-full w-[330px] fixed">
         <section>
-          <div className="info-personal">
+          <div className="flex flex-col items-center gap-2 mt-12">
             <img
-              className="foto-personal"
+              className="h-[150px] w-[150px] rounded-full"
               src="images/profilepic.png"
               alt="Profile pic"
             />
-            <div className="nombre-persona">
-              <span className="primer-nombre">Juan</span>
-              <span className="apellido">Calle</span>
+            <div className="flex gap-2">
+              <span className="font-bold text-xl">Juan</span>
+              <span className="text-xl font-bold text-gray-500">Calle</span>
             </div>
-            <span className="titulo-persona">Fullstack Developer</span>
+            <span className="text-gray-500">Front-end Developer</span>
           </div>
           <br></br>
         </section>
         <hr></hr>
-        <section className="contact-me">
+        <section className="flex flex-col items-center">
           <table>
             <tbody>
               <tr>
@@ -103,7 +102,7 @@ const Index = () => {
           <Skills name="Adaptability" />
         </section>
       </aside>
-      <div className="ml-[20%]"></div>
+      <div className="ml-[20.5%]" />
       <main className="max-w-7xl">
         <section className="flex justify-center flex-wrap">
           <div className="m-10 mt-0 w-full flex justify-between text-justify gap-6 bg-neutral-50 min-w-max">
@@ -112,7 +111,7 @@ const Index = () => {
               <div className="mb-5 mt-1 font-bold text-5xl flex">
                 <h2 className="mr-2 text-cyan-700">Front-end</h2> Developer
               </div>
-              <h4 className="mb-2 font-medium text-gray-500 whitespace-normal max-w-xl">
+              <h4 className="mb-2 font-medium text-gray-500 whitespace-normal max-w-xl ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -148,14 +147,14 @@ const Index = () => {
               image="images/develop.png"
             />
             <Knowledge
-              title="UI/UX Design"
-              text="Mobile App, Website Design"
-              image="images/uiux.png"
+              title="Rest API"
+              text="API Consumption, API Creation"
+              image="images/api.png"
             />
             <Knowledge
-              title="Sound Design"
-              text="Voice Over,Beat Making"
-              image="images/sound.png"
+              title="Graphic Design"	
+              text="Photoshop, Illustrator"
+              image="images/photoshop.png"
             />
             <Knowledge
               title="Game Design"
@@ -163,9 +162,9 @@ const Index = () => {
               image="images/game-development.png"
             />
             <Knowledge
-              title="Photography"
-              text="Portrait, Product Photography"
-              image="images/camera.png"
+              title="Mobile Development"
+              text="Apps, Responsive Web Design"
+              image="images/mobile.png"
             />
           </div>
         </section>
@@ -233,7 +232,7 @@ const Index = () => {
           </div>
         </section>
         <footer className="text-center p-10 mb-0 w-full min-w-max m-2 bg-neutral-50">
-          2023 All Rights Reversed. Juanbc2
+          2023 All Rights Reserved. Juanbc2
         </footer>
       </main>
       <aside className="gap-15 px-5 py-2 right-0 bg-neutral-50 flex-col flex h-full text-center fixed">
