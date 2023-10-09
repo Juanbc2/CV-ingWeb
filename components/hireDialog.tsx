@@ -31,7 +31,7 @@ function HireDialog(props: HireDialogProps) {
           reach out if that changes.
         </DialogContentText>
         <button
-          className="m-5 py-2 px-5 rounded-lg text-black bg-cyan-700 hover:bg-cyan-800 font-bold text-lg glow-on-hover"
+          className="m-5 py-2 px-5 rounded-lg text-slate-50 bg-cyan-700 hover:bg-cyan-800 font-bold text-lg glow-on-hover"
           
           onClick={() =>
             window.open("https://www.youtube.com/watch?v=1gI_HGDgG7c")
@@ -40,7 +40,7 @@ function HireDialog(props: HireDialogProps) {
           Funny Video!
         </button>
         <button
-          className="m-5 py-2 px-5 rounded-lg text-black bg-cyan-700 hover:bg-cyan-800 font-bold text-lg"
+          className="m-5 py-2 px-5 rounded-lg text-slate-50 bg-cyan-700 hover:bg-cyan-800 font-bold text-lg"
           onClick={handleClose}
         >
           Close

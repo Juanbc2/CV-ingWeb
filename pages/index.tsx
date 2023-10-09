@@ -122,7 +122,7 @@ const Index = () => {
                   and give solution to the challenges that arrive.
                 </h4>
                 <button
-                  className="mt-10 py-4 px-6 rounded-lg text-black bg-cyan-700 hover:bg-cyan-800 font-bold text-lg"
+                  className="mt-10 py-4 px-6 rounded-lg text-slate-50 bg-cyan-700 hover:bg-cyan-800 font-bold text-lg"
                   onClick={handleClickOpen}
                 >
                   HIRE ME ➤
